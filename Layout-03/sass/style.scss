@@ -194,6 +194,7 @@ footer{
         display: flex;
         flex-direction: column;
         width: 43%;
+        background-color: #222;
       
         .quick-menu{
         padding: 50px;
@@ -212,10 +213,12 @@ footer{
          
         }
         .logo{
-   
+            text-align: center;
+            line-height: 100px;
             width: 300px;
             height: 100px;
-            background-color: rgb(165, 160, 160);
+            background-color: rgb(105, 105, 105);
+            font-size: 33px;
             
     
         }

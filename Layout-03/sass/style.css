@@ -152,6 +152,7 @@ footer .third {
   display: flex;
   flex-direction: column;
   width: 43%;
+  background-color: #222;
 }
 footer .third .quick-menu {
   padding: 50px;
@@ -162,7 +163,10 @@ footer .third .quick-menu ul li {
   width: 200px;
 }
 footer .third .logo {
+  text-align: center;
+  line-height: 100px;
   width: 300px;
   height: 100px;
-  background-color: rgb(165, 160, 160);
+  background-color: rgb(105, 105, 105);
+  font-size: 33px;
 }/*# sourceMappingURL=style.css.map */
