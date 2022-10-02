@@ -159,6 +159,7 @@ footer{
     margin-top: 50px;
     color:white;
 
+
     hr{
             border-top: 1px solid #aaa;
         } 
@@ -190,7 +191,8 @@ footer{
     }
     
     .third{
-        float: left;
+        display: flex;
+        flex-direction: column;
         width: 43%;
       
         .quick-menu{
@@ -209,5 +211,15 @@ footer{
             }
          
         }
+        .logo{
+   
+            width: 300px;
+            height: 100px;
+            background-color: rgb(165, 160, 160);
+            
+    
+        }
+
     }
+
 }

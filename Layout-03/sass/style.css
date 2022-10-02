@@ -149,7 +149,8 @@ footer .text h3 span {
   color: rgb(202, 155, 202);
 }
 footer .third {
-  float: left;
+  display: flex;
+  flex-direction: column;
   width: 43%;
 }
 footer .third .quick-menu {
@@ -159,4 +160,9 @@ footer .third .quick-menu {
 footer .third .quick-menu ul li {
   font-size: 32px;
   width: 200px;
+}
+footer .third .logo {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(165, 160, 160);
 }/*# sourceMappingURL=style.css.map */
