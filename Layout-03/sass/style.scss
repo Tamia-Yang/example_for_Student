@@ -1,0 +1,213 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+
+
+    ul {   
+        list-style: none;
+   
+    }
+
+    h2,h3{
+        margin: 20px 0;
+        font-size: 36px;
+        background-color: #fff;
+    
+    }
+    h3{
+        font-size: 24px;
+    }
+}
+
+//common end
+
+.header{
+    width: 100vw;
+    height: 100px;
+    background-color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo {
+        width: 200px;
+        height: 100%;
+        background-color: #ccc;
+        border: 1px solid red;
+        line-height: 100px;
+        text-align: center;
+
+    }
+    .right-menu{
+        display: flex;
+        width: 800px;
+        height: 100%;
+        .navbar, .icons{
+            line-height: 100px;
+            width: 400px;
+            height: 100%;
+            background-color: #eee;
+           
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .navbar {
+            background-color: #ddd;
+          
+            }
+    }
+   
+}
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+
+
+    main {
+        .slide {
+            width: 100%;
+            height: 300px;
+            background-color: #ccc;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+
+            .slot {
+                display: flex;
+            }
+            .slot div{
+                width: calc((100% - (3 - 1) * 1.6rem)/3);
+                height: 200px;
+                border: 1px solid red;
+                margin: 0 10px;
+            }
+
+        }
+        section{
+            .banner {
+                border: 1px solid red;
+                width: 100%;
+                height: 280px;
+                padding: 20px;
+
+                .course{
+                    float: left;
+                    display: flex;
+                    
+                    background-color: #bbb;
+                    width: 400px;
+                    height: 100%;
+                    margin-right: 20px;
+                   
+                }
+                .info {
+                    height: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .detail{
+                        width: 60%;
+                        color:#666;
+                    }
+                    .price{
+                        font-size: 30px;
+                       
+                    }
+
+                  
+                    
+                }
+            }
+            
+        }
+        .view, .recommend{
+            display: flex;
+            width: 100%;
+            height: 300px;
+            flex-direction: column;
+            padding-top: 40px;
+            
+            .view-box, .recom-box{
+                display: flex;
+                height: 100%;
+                div{
+                    border: 1px solid red;
+                    width:20%;
+                    height: 100%;
+                    margin: 0 5px;
+                }
+            }
+
+     
+        }
+    }
+
+}
+
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: #222;
+    margin-top: 50px;
+    color:white;
+
+    hr{
+            border-top: 1px solid #aaa;
+        } 
+    .text {
+        padding: 20px 0;
+        background-color: #222;
+        padding-left: 50px;
+
+    
+        h2{
+            background-color: #222;
+
+        }
+        p, h3 {
+    
+            background-color: #222;
+            padding-bottom: 40px;
+         
+        }
+        h3{
+            font-size:30px;
+            padding: 20px 0;  
+            
+            span {
+                font-size: 30px;
+                color:rgb(202, 155, 202);
+            }
+        }
+    }
+    
+    .third{
+        float: left;
+        width: 43%;
+      
+        .quick-menu{
+        padding: 50px;
+
+ 
+            display: flex;
+          
+    
+            ul{
+                
+                li{
+                    font-size: 32px;
+                    width: 200px;
+                }
+            }
+         
+        }
+    }
+}
