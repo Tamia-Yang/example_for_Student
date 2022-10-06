@@ -2,11 +2,10 @@
 // const left = document.querySelector(".left");
 // const container = document.querySelector(".container");
 
-$(".split").click(function(){
-    if($(".split").hasClass("right")){
+$(".split").on("click",function(){
+    if($(this).hasClass("right")){
         console.log("right");
-    }else {
+    }else if($(this).hasClass("left")) {
         console.log("left");
     }
-
 })
