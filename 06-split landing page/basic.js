@@ -1,8 +1,12 @@
-const btn = document.querySelector(".btn");
-const search = document.querySelector(".search");
-const input = document.querySelector("input");
+// const right = document.querySelector(".right");
+// const left = document.querySelector(".left");
+// const container = document.querySelector(".container");
 
-btn.addEventListener("click",function(){
-    search.classList.toggle("active");
-    input.focus();
+$(".split").click(function(){
+    if($(".split").hasClass("right")){
+        console.log("right");
+    }else {
+        console.log("left");
+    }
+
 })
