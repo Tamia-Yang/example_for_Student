@@ -28,6 +28,7 @@ body h1 {
   overflow: hidden;
   transition: all 0.5s ease;
   border-radius: 10px;
+  background-color: #ddd;
 }
 .container .faq.active .text {
   display: block;
@@ -41,6 +42,9 @@ body h1 {
 }
 .container .faq.active .fa-chevron-down {
   display: none;
+}
+.container .faq.active {
+  background-color: #fff;
 }
 .container .faq.active::before {
   content: "\f075";
