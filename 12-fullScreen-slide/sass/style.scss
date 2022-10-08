@@ -11,55 +11,88 @@
   width: 100vw;
   height:100vh;
 
+  input {
+    display: none;
+  }
+  input[name=tab1]:checked ~ .slide1{
+    transform: translateX(-100%);
+  }
+  input[name=tab2]:checked ~ .slide2{
+    transform: translateX(-200%);
+  }
+  input[name=tab3]:checked ~ .slide3{
+    transform: translateX(-300%);
+  }
+
   .frame {
     width: 100%;
     height: 100%;
     overflow: hidden;
 
-    input {
-      display: none;
-
-    }
-    label {
-
-      background-color: #fff;
-
-    }
-    .label {
-      width: 100px;
-      height: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
     }
 
-    .bag {
-      width: 3*100%;
+//     position: relative;
+.items{
+  width: 300%;
+  height: 100vh;
+  display: flex;
+
+
+  div{
+    width: 33.33%;
+  }
+    .slide1{
+      background-color: pink;
+    }
+    .slide2{
+      background-color: rgb(192, 255, 195);
+    }
+    .slide3{
+      background-color: rgb(192, 242, 255);
+    }
+ 
+
+  }
+ 
+    .items {
+      width: 300%;
       height: 100%;
-     
+      translate: transform 0.3s ease;
+    
+      h1{
+        text-align: center;
+        color:#222;
+      }
 
-      .bg1, .bg2, .bg3 {
-   
+      .slide1, .slide2, .slide3 {
         width: 100%;
         height: 100%;
          
-        h1{
-          margin: 0 auto;
-          text-align: center;
-          color:#222;
-        }
+      }
+
    
-      }
-      .bg1{
-        background-color: pink;
-      }
-      .bg2{
-        background-color: rgb(192, 255, 195);
-      }
-      .bg3{
-        background-color: rgb(192, 242, 255);
-      }
+    }
+     
+    .btn {
+      width: 300px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    label {
+    
+      width: 100px;
+      height: 10px;
+      background-color: #fff;
+      
+
+     
     }
   }
 }
