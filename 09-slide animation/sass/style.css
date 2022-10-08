@@ -7,3 +7,38 @@
   list-style: none;
   color: white;
 }
+
+body {
+  color: #222;
+  line-height: 1.5em;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .tab-inner {
+  width: 300px;
+  height: 350px;
+  border: 1px solid red;
+}
+body .tab-inner input[name=tabmenu] {
+  display: none;
+}
+body .tab-inner .slide .slide-inner img {
+  width: 300px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .tab-inner .btn {
+  text-align: center;
+  margin-top: 10px;
+}
+body .tab-inner .btn label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #666;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
