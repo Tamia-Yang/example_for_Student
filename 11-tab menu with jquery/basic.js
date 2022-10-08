@@ -1,21 +1,10 @@
 
-  const cards = document.querySelectorAll(".card");
+$("img").click(function(){
+  $("img").removeClass("active");
+  $(this).toggleClass("active");
 
-window.addEventListener("scroll",checkLen);
-checkLen()
 
- function checkLen(){
-    let triggerLine = window.innerHeight / 5 * 4;
- 
-    cards.forEach(box => {
-        let boxBottom = box.getBoundingClientRect().bottom;
-        if(boxBottom < triggerLine){
-          box.classList.add("active");
-        }else {
-            box.classList.remove("active");
-        }
+  })
 
-    })
- }
 
 
