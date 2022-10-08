@@ -25,6 +25,21 @@ body .tab-inner {
 body .tab-inner input[name=tabmenu] {
   display: none;
 }
+body .tab-inner .slide {
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+body .tab-inner .slide .slide-inner {
+  width: 900px;
+  height: 350px;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s linear;
+}
 body .tab-inner .slide .slide-inner img {
   width: 300px;
   height: 350px;
@@ -41,4 +56,14 @@ body .tab-inner .btn label {
   height: 20px;
   background-color: #666;
   border-radius: 50%;
+  cursor: pointer;
+}
+body .tab-inner input[id=tab1]:checked ~ .slide .slide-inner {
+  left: 0;
+}
+body .tab-inner input[id=tab2]:checked ~ .slide .slide-inner {
+  left: -300px;
+}
+body .tab-inner input[id=tab3]:checked ~ .slide .slide-inner {
+  left: -600px;
 }/*# sourceMappingURL=style.css.map */
