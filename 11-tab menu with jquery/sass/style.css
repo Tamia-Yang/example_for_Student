@@ -20,48 +20,41 @@ body {
   background-color: #fff;
   padding: 60px;
 }
-
 .testimonial-section h1 {
   text-align: center;
 }
-
 .testimonial-section .testimonial-pic {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .testimonial-section .testimonial-pic img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100px;
   height: 100px;
   margin: 20px;
   filter: grayscale(1);
   transition: all 0.5s linear;
 }
-
 .testimonial-section .testimonial-pic img.active {
   border-radius: 50%;
   filter: grayscale(0);
 }
-
 .testimonial-section .testimonial .content {
   text-align: center;
   display: none;
 }
-
 .testimonial-section .testimonial .content p {
   display: block;
   width: 800px;
   margin: 0 auto;
 }
-
 .testimonial-section .testimonial .content.active {
   display: block;
 }
-
 .testimonial-section .testimonial .content span {
   margin: 20px 0;
   display: block;
   font-weight: bold;
-}
+}/*# sourceMappingURL=style.css.map */
