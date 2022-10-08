@@ -66,4 +66,9 @@ body .tab-inner input[id=tab2]:checked ~ .slide .slide-inner {
 }
 body .tab-inner input[id=tab3]:checked ~ .slide .slide-inner {
   left: -600px;
+}
+body .tab-inner input[id=tab1]:checked ~ .btn label[for=tab1],
+body .tab-inner input[id=tab2]:checked ~ .btn label[for=tab2],
+body .tab-inner input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: crimson;
 }/*# sourceMappingURL=style.css.map */
