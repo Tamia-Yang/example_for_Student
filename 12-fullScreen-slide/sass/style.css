@@ -15,15 +15,21 @@
 .inner input[id=tab1]:checked ~ .frame .items {
   left: 0;
 }
-.inner input[id=tab2]:checked ~ .frame .item {
+.inner input[id=tab1]:checked ~ .frame .btn label[for=tab1],
+.inner input[id=tab2]:checked ~ .frame .btn label[for=tab2],
+.inner input[id=tab3]:checked ~ .frame .btn label[for=tab3] {
+  background-color: #333;
+}
+.inner input[id=tab2]:checked ~ .frame .items {
   left: -100%;
 }
-.inner input[id=tab3]:checked ~ .frame .item {
+.inner input[id=tab3]:checked ~ .frame .items {
   left: -200%;
 }
 .inner .frame {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   position: relative;
 }
 .inner .frame .items {
@@ -32,6 +38,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.5s;
 }
 .inner .frame .items::after {
   content: "";
@@ -65,7 +72,7 @@
 .inner .frame label {
   display: inline-block;
   width: 100px;
-  height: 25px;
+  height: 15px;
   background-color: #fff;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
