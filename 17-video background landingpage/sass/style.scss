@@ -33,7 +33,7 @@ a{
 
 .heading {
   position: absolute;
-  width:700px;
+  width:600px;
   bottom: 100px;
   left: 100px;
 
@@ -63,4 +63,26 @@ a{
     color: black;
     border-color: #fff;
   }
+
+
 }
+.anniversary{
+  position: absolute;
+  right:100px;
+  bottom:100px;
+  text-align: center;
+  
+  h2{
+    color: black;
+   
+  }
+
+  span {
+    color: black;
+    font-size: 120px;
+    line-height: 1.2em;
+    font-family: 'Monoton', cursive;
+  }
+
+  }
+

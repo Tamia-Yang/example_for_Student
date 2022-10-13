@@ -30,19 +30,16 @@ a {
 
 .heading {
   position: absolute;
-  width: 700px;
+  width: 600px;
   bottom: 100px;
   left: 100px;
 }
-
 .heading h1 {
   font-size: 60px;
 }
-
 .heading h1 span {
   color: crimson;
 }
-
 .heading a {
   padding: 7px 20px;
   border: 2px solid white;
@@ -51,14 +48,28 @@ a {
   margin: 12px 5px;
   transition: all 0.3s;
 }
-
 .heading .btn-book:hover {
   border-color: #000;
   background-color: #000;
 }
-
 .heading .btn-learn:hover {
   background-color: #fff;
   color: black;
   border-color: #fff;
 }
+
+.anniversary {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+}
+.anniversary h2 {
+  color: black;
+}
+.anniversary span {
+  color: black;
+  font-size: 120px;
+  line-height: 1.2em;
+  font-family: "Monoton", cursive;
+}/*# sourceMappingURL=style.css.map */
