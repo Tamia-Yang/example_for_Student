@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html,
@@ -39,7 +38,6 @@ html, body {
   padding: 1em;
 }
 
-
 .menu-button-container {
   display: flex;
   height: 100%;
@@ -54,7 +52,6 @@ html, body {
   display: none;
 }
 
-
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -68,12 +65,12 @@ html, body {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
@@ -89,4 +86,4 @@ html, body {
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
-}
+}/*# sourceMappingURL=style.css.map */
