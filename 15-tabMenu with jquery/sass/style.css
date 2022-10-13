@@ -5,21 +5,79 @@
   box-sizing: border-box;
 }
 
-section {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+}
+
+section {
+  width: 800px;
+}
+section .heading {
+  float: left;
 }
 section .heading h1 {
   margin: 20px 0;
 }
 section .heading input[type=text]::-moz-placeholder {
   color: green;
+  -moz-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 section .heading input[type=text]:-ms-input-placeholder {
   color: green;
+  -ms-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 section .heading input[type=text]::placeholder {
   color: green;
+  transition: opacity 0.2s linear;
+}
+section .heading .input:focus {
+  outline: none;
+  border: 2px solid salmon;
+}
+section .heading .input:focus::-moz-placeholder {
+  opacity: 0;
+}
+section .heading .input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+section .heading .input:focus::placeholder {
+  opacity: 0;
+}
+section .tab-inner {
+  border: 1px solid #555;
+  margin-top: 20px;
+}
+section .tab-inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section .tab-inner .btn {
+  overflow: hidden;
+}
+section .tab-inner ul li {
+  list-style: none;
+  float: left;
+  border: 1px solid black;
+  padding: 8px 14px;
+  border: 2px solid transparent;
+  background-color: #eee;
+}
+section .tab-inner ul li.active {
+  border-top: 2px solid crimson;
+  background-color: white;
+}
+section .tab-inner .tabs div {
+  border-top: 1px solid #555;
+  height: 200px;
+  display: none;
+}
+section .tab-inner .tabs div.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
