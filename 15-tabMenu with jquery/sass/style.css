@@ -18,19 +18,26 @@ section {
 section .heading h1 {
   margin: 20px 0;
 }
+section .heading input {
+  width: 100%;
+  height: 30px;
+}
 section .heading input[type=text]::-moz-placeholder {
   color: green;
   -moz-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
+  padding-left: 30px;
 }
 section .heading input[type=text]:-ms-input-placeholder {
   color: green;
   -ms-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
+  padding-left: 30px;
 }
 section .heading input[type=text]::placeholder {
   color: green;
   transition: opacity 0.2s linear;
+  padding-left: 30px;
 }
 section .heading .input:focus {
   outline: none;
@@ -44,6 +51,10 @@ section .heading .input:focus:-ms-input-placeholder {
 }
 section .heading .input:focus::placeholder {
   opacity: 0;
+}
+section .heading input[type=text] {
+  background: #fff url(/images/search-icon.png) no-repeat center left 3px;
+  background-size: contain;
 }
 section .tab-inner {
   border: 1px solid #555;
