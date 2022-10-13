@@ -3,7 +3,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.video-frame{
+  video {
+    position: fixed;
+    min-height: 100%;  // fill it up even if the screen is small.
+    min-height: 100%;
+    z-index: -1;   // because video is placed z-index top.
+  }
+}
+
+.logo {  //image doesn't have before,after.
+  position: absolute;
+  top:50px;
+  left:100px;
 }
 // font-family: 'Monoton', cursive;
 // font-family: 'Montserrat', sans-serif;
+
+.heading {
+  position: absolute;
+  width:700px;
+  bottom: 100px;
+  left: 100px;
+
+  h1{
+    font-size: 60px;
+
+    span {
+      color: crimson;
+    }
+  
+  }
+  a{
+    padding: 7px 20px;
+    border:2px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 12px 5px;
+    transition: all 0.3s;
+    
+  }
+  .btn-book:hover{
+    border-color: #000;
+    background-color: #000;
+  }
+  .btn-learn:hover{
+    background-color: #fff;
+    color: black;
+    border-color: #fff;
+  }
+}
