@@ -7,21 +7,19 @@
 
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #777;
+  height: 100vh;
 
-  .fa-star {
-
-    font-size: 30px;
-    cursor: pointer;
-
-    &.active {
-      color: yellow;
+  .heading {
+    h1{
+      margin: 20px 0;
+    }
+    input[type=text]::placeholder {
+      color:green;
     }
   }
-}
+
+  }

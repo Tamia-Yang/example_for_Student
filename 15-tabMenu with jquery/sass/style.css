@@ -5,18 +5,21 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #777;
+  height: 100vh;
 }
-body .fa-star {
-  font-size: 30px;
-  cursor: pointer;
+section .heading h1 {
+  margin: 20px 0;
 }
-body .fa-star.active {
-  color: yellow;
+section .heading input[type=text]::-moz-placeholder {
+  color: green;
+}
+section .heading input[type=text]:-ms-input-placeholder {
+  color: green;
+}
+section .heading input[type=text]::placeholder {
+  color: green;
 }/*# sourceMappingURL=style.css.map */
