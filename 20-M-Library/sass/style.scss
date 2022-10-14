@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.faq{
+  height: 100vh;
+  background:#ffeb60;
+  padding-top: 100px;
+
+  .faq-inner{
+    margin:auto;
+    width: 750px;
+    
+    h1{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .accordion{
+      .accordion-item{
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+        .title {
+          padding: 20px 40px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .content{
+          border-top: 2px solid #222;
+          padding: 20px;
+          margin: 0 auto;
+          width: 96%;
+          display: none;
+        }
+      }
+    }
+  }
+}
