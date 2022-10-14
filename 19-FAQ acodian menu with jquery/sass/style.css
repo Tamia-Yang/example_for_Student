@@ -18,26 +18,62 @@
   text-align: center;
   font-size: 50px;
 }
-.faq-inner .accordion {
-  background-color: #303030;
-  padding: 10px 15px;
-}
 .faq-inner .accordion .title {
   margin-bottom: 7px;
   padding: 10px;
   cursor: pointer;
+  background-color: #303030;
+  padding: 10px 15px;
+}
+.faq-inner .accordion .title.active::after {
+  transform: rotate(45deg);
 }
 .faq-inner .accordion .title::after {
   content: "+";
   float: right;
   line-height: 16px;
+  transition: rotate 0.5s;
   font-size: 25px;
 }
 .faq-inner .accordion .title.active {
   background-color: crimson;
 }
 .faq-inner .accordion .content {
+  background-color: #303030;
+  padding: 10px 15px;
   margin-bottom: 7px;
-  display: none;
-  padding: 10px;
+}
+.faq-inner .newsletter {
+  margin: 30px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.faq-inner .newsletter p {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.faq-inner .newsletter div {
+  display: flex;
+}
+.faq-inner .newsletter input[type=email], .faq-inner .newsletter button {
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  vertical-align: middle;
+  flex: 3;
+}
+.faq-inner .newsletter button {
+  background-color: #e84118;
+  color: white;
+  cursor: pointer;
+  flex: 1;
+  position: relative;
+}
+.faq-inner .newsletter button .fa-regular {
+  position: absolute;
+  right: 20px;
+  top: 10px;
 }/*# sourceMappingURL=style.css.map */
