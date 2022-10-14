@@ -1,10 +1,6 @@
-$(".trigger").click(function(){
-  $(this).toggleClass("active");
-  $(".modal-gnb").fadeToggle();
-
-  // if($(this).hasClass("active")){
-  //   $(".modal-gnb").fadeIn();
-  // }else {
-  //   $(".modal-gnb").fadeOut();
-  // }
+$(".title").click(function(){
+  $(this).siblings().removeClass("active");
+  $(this).addClass("active");
+  $(this).siblings(".accordion .content").slideUp(); // pointing siblings  is importing.
+  $(this).next().stop().slideToggle(350);
 })

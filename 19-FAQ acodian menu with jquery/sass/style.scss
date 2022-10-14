@@ -23,11 +23,26 @@
     padding: 10px 15px;
     .title {
      margin-bottom: 7px;
+     padding: 10px;
+
+     &::after{
+      content: '\2b';
+      float: right;
+      line-height: 16px;
+    
+      font-size: 25px;
+     
+     }
+     &.active{
+      background-color: crimson;
+     }
      cursor: pointer;
     }
     .content{
       margin-bottom: 7px;
       display: none;
+      padding: 10px;
+      
     }
   }
 }

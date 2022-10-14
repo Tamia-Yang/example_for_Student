@@ -24,9 +24,20 @@
 }
 .faq-inner .accordion .title {
   margin-bottom: 7px;
+  padding: 10px;
   cursor: pointer;
+}
+.faq-inner .accordion .title::after {
+  content: "+";
+  float: right;
+  line-height: 16px;
+  font-size: 25px;
+}
+.faq-inner .accordion .title.active {
+  background-color: crimson;
 }
 .faq-inner .accordion .content {
   margin-bottom: 7px;
   display: none;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
