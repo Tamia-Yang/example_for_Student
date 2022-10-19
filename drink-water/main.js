@@ -1,1 +1,0 @@
-var 학생1 = { name: 'kim', age: 20 }
